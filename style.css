@@ -1,0 +1,38 @@
+html::before {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-family: monospace;
+    opacity: 0.6;
+    background: rebeccapurple;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    color: pink;
+}
+
+body {
+    background-color: yellow;
+    border: 5px solid gray;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+p {
+    font-size: 12px;
+}
