@@ -6,7 +6,7 @@ html::before {
   margin: auto;
   width: fit-content;
   height: fit-content;
-  font-family: Times New Roman;
+  font-family: Helvetica;
   opacity: 0.6;
   background: rebeccapurple;
   color: white;
