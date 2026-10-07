@@ -6,7 +6,7 @@ html::before {
   margin: auto;
   width: fit-content;
   height: fit-content;
-  font-family: Helvetica;
+  font-family: Arial;
   opacity: 0.6;
   background: rebeccapurple;
   color: white;
@@ -14,7 +14,7 @@ html::before {
   border-radius: 4px; }
 h1 {text-align:center ; 
     font-weight:bold ; 
-    font-family: Arial Narrow ;
+    font-family: Arial;
     color:green ;}
 ul { list-style-type:none;
    }
