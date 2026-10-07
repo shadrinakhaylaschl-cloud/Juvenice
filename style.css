@@ -47,7 +47,7 @@ li {display:inline; padding:21px ;}
 
 marquee {color:brown}
 
-nav {display:flex; justify-content: center; gap: 35px}
+nav {display:flex; justify-content: center; gap: 20px}
 nav a {
     display: inline-block;
     text-decoration: none;
