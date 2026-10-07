@@ -1,25 +1,77 @@
 html::before {
-  content: 'CodePen ♥ The Web';
   position: fixed;
   inset: 0;
   z-index: -1;
   margin: auto;
   width: fit-content;
   height: fit-content;
-  font-family: Arial;
+  font-family: Helvetica;
   opacity: 0.6;
   background: rebeccapurple;
   color: white;
   padding: 4px 8px;
-  border-radius: 4px; }
+  border-radius: 4px; 
+}
 h1 {text-align:center ; 
     font-weight:bold ; 
-    font-family: Arial;
-    color:green ;}
-ul { list-style-type:none;
-   }
-p {font-size:12 px}
-body {background-color:pink; border:5px solid green; border-radius; 12px; 
-     }
+    font-family:cambria;
+    color:tan ;
+    font-size: 45px;
+    color: #c9ae82;
+    text-shadow: 2px 1px 3px #f3df9f;
+    letter-spacing: 2px;
+}
+
+.decoration {
+    text-align: center;
+    color: #d6bd7c;
+    font-size: 26px;
+    margin: 5px 0 20px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: tan;
+    margin-top: -15px;
+    letter-spacing: 2px;
+}
+ul { list-style-type:none;}
+
+p {font-size:12 px ;
+  font-family:cambria ;
+   color :sienna}
+
+body {background-color:lightcyan; border:5px solid khaki; border-radius: 12px; }
+
 li {display:inline; padding:21px ;}
-marquee {color:white}
+
+marquee {color:brown}
+
+img {width:300px ; height : 250px}
+
+nav {display:flex; justify-content: center; gap: 50px}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size:25px;
+    color: #765477;
+    background-color: #fff6d9;
+    padding: 10px 30px;
+    margin: 0 15px;
+    border: 2px solid #e5cf8f;
+    border-radius: 9px;
+    box-shadow: 3px 3px 0px #d6c181;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #f3df9f;
+    color: white;
+    transform: translateY(-4px) rotate(-2deg);
+    box-shadow: 5px 6px 0px #c8b574;
+}
+
+nav a:active {
+    transform: translateY(2px);
+    box-shadow: 1px 2px 0px #c8b574;
+}
