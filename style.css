@@ -30,7 +30,7 @@ h1 {text-align:center ;
 }
 .subtitle {
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: tan;
     margin-top: -15px;
     letter-spacing: 2px;
@@ -41,35 +41,37 @@ p {font-size:12 px ;
   font-family:cambria ;
    color :sienna}
 
-body {background-color:lightcyan; border:5px solid khaki; border-radius: 12px; }
+body {background-color:lightcyan; border:5px solid khaki;
+      border-radius: 12px; }
 
 li {display:inline; padding:21px ;}
 
 marquee {color:brown}
 
-nav {display:flex; justify-content: center; gap: 9px}
+img {width:300px ; height : 250px}
+
+
+nav {display:flex; justify-content: center; gap: 10px}
 nav a {
-    display: inline-block;
+    display: block;
+  font-family:Arial Black;
+    width: 200px;
+    text-align: center;
+    margin: 12px auto;
+    padding: 12px 20px;
+
     text-decoration: none;
-    font-size:20px;
     color: #765477;
     background-color: #fff6d9;
-    padding: 10px 30px;
-    margin: 0 15px;
     border: 2px solid #e5cf8f;
-    border-radius: 9px;
+    border-radius: 12px;
     box-shadow: 3px 3px 0px #d6c181;
+
     transition: 0.2s;
 }
 
-nav a:hover {
+a:hover {
     background-color: #f3df9f;
     color: white;
-    transform: translateY(-4px) rotate(-2deg);
-    box-shadow: 5px 6px 0px #c8b574;
-}
-
-nav a:active {
-    transform: translateY(2px);
-    box-shadow: 1px 2px 0px #c8b574;
+    transform: translateY(-4px);
 }
