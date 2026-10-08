@@ -52,7 +52,11 @@ li {display:inline; padding:21px ;}
 
 marquee {color:sienna ; font-size: 29px}
 
-img {display:block; width:300px ; height : 250px}
+img {display:block; margin: auto ;
+     width:300px ; 
+     height : 250px ; 
+     align: center; 
+    }
 
 nav {display:flex; justify-content: center; gap: 10px}
 nav a {
