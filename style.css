@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html::before {
   position: fixed;
   inset: 0;
@@ -14,49 +16,48 @@ html::before {
 }
 h1 {text-align:center ; 
     font-weight:bold ; 
-    font-family:Georgia;
+    font-family:'Press Start 2P',cursive;
     color:lemonchiffon;
     font-size: 30px;
     color: lemonchiffon;
-    text-shadow: 2px 1px 3px tan;
+    text-shadow: 2px 1px 0px tan;
     letter-spacing: 4px;
 }
 
 .decoration {
     text-align: center;
     color: #FEE28F;
-  text-shadow:1px 1px 3px lemonchiffon;
+  text-shadow:0px 0px 3px lemonchiffon;
     font-size: 26px;
     margin: 10px 0 20px;
 }
 .subtitle {
     text-align: center;
     font-size: 10px;
-  text-shadow:1px 1px 5px tan;
-    color:cornsilk;
+  text-shadow:1px 1px 5px lemonchiffon;
+    color:sienna;
     margin-top: -15px;
     letter-spacing: 2px;
 }
 ul { list-style-type:none;}
 
 p {font-size:12 px ;
-  font-family:monospace;
-   color :sienna}
+  font-family:monospace; text-align : center ;
+   color :sienna ;text-shadow:1px 1px 5px lemonchiffon}
 
 body {background-color:lightblue; border:5px solid lemonchiffon;
       border-radius: 12px; }
 
 li {display:inline; padding:21px ;}
 
-marquee {color:brown}
+marquee {color:sienna ; font-size: 29px}
 
 img {width:300px ; height : 250px}
-
 
 nav {display:flex; justify-content: center; gap: 10px}
 nav a {
     display: block;
-  font-family:Arial Black;
+  font-family:'Press Start 2P',cursive;;
     width: 200px;
     text-align: center;
     margin: 12px auto;
