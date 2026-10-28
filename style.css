@@ -14,11 +14,93 @@ html::before {
   padding: 4px 8px;
   border-radius: 4px; 
 }
+
+
+/* ===== PIXEL CURTAIN ===== */
+
+.pixel-curtain {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50.5%;
+    z-index: 9999;
+    pointer-events: none;
+
+    background-color: #91d8f5;
+
+    /* Pinggiran pixel kuning pastel */
+    border-color: #ffe69a;
+    border-style: solid;
+    border-width: 0 5px;
+
+    /* Pola kotak pixel */
+    background-image:
+        linear-gradient(
+            90deg,
+            transparent 90%,
+            rgba(255, 255, 255, 0.18) 90%
+        ),
+        linear-gradient(
+            transparent 90%,
+            rgba(255, 255, 255, 0.18) 90%
+        );
+
+    background-size: 20px 20px;
+
+    animation-duration: 1.8s;
+    animation-timing-function: steps(12, end);
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+/* Tirai kiri */
+.curtain-left {
+    left: 0;
+    border-left: none;
+    box-shadow: 5px 0 #f9d982;
+    animation-name: pixelOpenLeft;
+}
+
+/* Tirai kanan */
+.curtain-right {
+    right: 0;
+    border-right: none;
+    box-shadow: -5px 0 #f9d982;
+    animation-name: pixelOpenRight;
+}
+
+/* Gerakan membuka tirai */
+@keyframes pixelOpenLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+}
+
+@keyframes pixelOpenRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+}
+
+
+
+
+
 h1 {text-align:center ; 
     font-weight:bold ; 
     font-family:'Press Start 2P',cursive;
     color:lemonchiffon;
-    font-size: 20px;
+    font-size: 17px;
     color: lemonchiffon;
     text-shadow: 2px 1px 0px tan;
     letter-spacing: 4px;
@@ -46,27 +128,186 @@ p {font-size:12 px ;
    color :sienna ;text-shadow:1px 1px 5px lemonchiffon}
 
 body {background-color:lightblue; border:5px solid lemonchiffon;
-      border-radius: 12px; }
+      border-radius: 12px; } 
+
+/* ===== JUvenice PIXEL SKY ===== */
 
 body {
     position: relative;
     isolation: isolate;
-    background: none;
+    background: transparent;
 }
 
-body::before {
-    content: "";
+/* Langit biru pastel */
+.sky-bg {
     position: fixed;
-    inset: -10px;
+    inset: 0;
     z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
 
-    background-image: url("ede44fcda409681605d51377bf951c4f.jpg");
-    background-size: cover;
-    background-position: center;
-
-    filter: blur(5px);
+    background: linear-gradient(
+        180deg,
+        #bceeff 0%,
+        #d8f5ff 55%,
+        #effbff 100%
+    );
 }
 
+/* ===== PIXEL CLOUDS ===== */
+
+.pixel-cloud {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    background: #ffffff;
+    image-rendering: pixelated;
+
+    box-shadow:
+        8px -8px 0 #ffffff,
+        16px -16px 0 #ffffff,
+        24px -16px 0 #ffffff,
+        32px -8px 0 #ffffff,
+        40px 0 0 #ffffff,
+        8px 0 0 #ffffff,
+        16px 0 0 #ffffff,
+        24px 0 0 #ffffff;
+    
+    opacity: 0.85;
+}
+
+/* Awan pertama */
+.cloud-one {
+    top: 14%;
+    left: -100px;
+    transform: scale(1.2);
+    animation: cloudMove 32s linear infinite;
+}
+
+/* Awan kedua */
+.cloud-two {
+    top: 38%;
+    left: 35%;
+    transform: scale(0.8);
+    opacity: 0.65;
+    animation: cloudFloat 7s ease-in-out infinite alternate;
+}
+
+/* Awan ketiga */
+.cloud-three {
+    top: 68%;
+    left: -120px;
+    transform: scale(0.65);
+    opacity: 0.55;
+    animation: cloudMove 42s linear infinite;
+}
+
+/* ===== PIXEL SPARKLES ===== */
+
+.pixel-star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff5b5;
+
+    box-shadow:
+        0 -8px 0 #fff5b5,
+        0 8px 0 #fff5b5,
+        -8px 0 0 #fff5b5,
+        8px 0 0 #fff5b5,
+        0 0 0 4px rgba(255, 255, 255, 0.4);
+
+    animation: sparkle 2s steps(2, end) infinite;
+}
+
+/* Posisi bintang */
+.star-one {
+    top: 18%;
+    left: 18%;
+    animation-delay: 0s;
+}
+
+.star-two {
+    top: 30%;
+    left: 78%;
+    transform: scale(0.7);
+    animation-delay: 0.8s;
+}
+
+.star-three {
+    top: 55%;
+    left: 12%;
+    transform: scale(0.6);
+    animation-delay: 1.2s;
+}
+
+.star-four {
+    top: 72%;
+    left: 85%;
+    animation-delay: 0.4s;
+}
+
+.star-five {
+    top: 12%;
+    left: 62%;
+    transform: scale(0.8);
+    animation-delay: 1.5s;
+}
+
+.star-six {
+    top: 44%;
+    left: 91%;
+    transform: scale(0.65);
+    animation-delay: 0.6s;
+}
+
+.star-seven {
+    top: 82%;
+    left: 30%;
+    transform: scale(0.7);
+    animation-delay: 1s;
+}
+
+.star-eight {
+    top: 25%;
+    left: 45%;
+    transform: scale(0.5);
+    animation-delay: 1.8s;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes cloudMove {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: calc(100vw + 180px);
+    }
+}
+
+@keyframes cloudFloat {
+    from {
+        margin-top: -8px;
+    }
+
+    to {
+        margin-top: 12px;
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.35;
+        filter: brightness(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        filter: brightness(1.3);
+    }
+}
 
 li {display:inline; padding:21px ;}
 
